@@ -1,0 +1,139 @@
+.theme {
+    
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+    overflow-x: hidden;
+    
+    .decoration {
+        position: absolute;
+    }
+    .balloon {
+        top: 0;
+        width: 100%;
+        height: auto;
+        z-index: 3;
+        animation:  hu__hu__balloon infinite 10s ease-in-out
+    }
+    .car {
+        top: 0;
+        width: 100%;
+        height: auto;
+        z-index: 3;
+        animation: 
+            pepe infinite 20s ease-in-out;
+    }
+    .heart {
+        top: 0;
+        width: 100%;
+        height: auto;
+        z-index: 3;
+            animation:  hu__hu__heart infinite 5s ease-in-out
+    }
+    .background {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .background2 {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        z-index: 2;
+    }
+    .couples {
+        top: 0;
+        width: 100%;
+        height: auto;
+        z-index: 20;
+    }
+    .flower {
+        animation:  hu__hu__flower infinite 1s ease-in-out
+    }
+    .wing_staff {
+        transform-origin: bottom right;
+        animation:  hu__hu__wing_staff infinite 3s ease-in-out
+    }
+    .star_staff {
+        transform-origin: bottom left;
+        animation:  hu__hu__star_staff infinite 5s ease-in-out
+    }
+    .qrcode {
+        cursor: pointer;
+    }
+    .wave {
+        top: 0;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        animation:  hu__hu__wave infinite 5s ease-in-out
+    }
+    .wave_bubble {
+        top: 0;
+        width: 100%;
+        height: auto;
+        z-index: 2;
+    }
+    @keyframes hu__hu__wing_staff {
+        50% { 
+            transform: rotate(-10deg);
+         }
+    }
+    @keyframes hu__hu__star_staff {
+        50% { 
+            transform: rotate(10deg);
+         }
+    }
+    @keyframes hu__hu__wave {
+        50% { 
+            transform: translateY(-1.5rem);
+         }
+    }
+    @keyframes hu__hu__heart {
+        50% { 
+            transform: translateY(0.8em);
+         }
+    }
+    @keyframes hu__hu__flower {
+        50% { 
+            transform: rotate(-20deg);
+         }
+    }
+    @keyframes hu__hu__balloon {
+        50% { 
+            transform: rotate(-20deg) translateY(30px);
+         }
+    }
+    @keyframes pepe {
+        25%, 64% { 
+            transform: rotate(1deg) translateY(-5px);
+         }
+        10%, 50%, 90% { 
+            transform: rotate(-1deg) translateY(5px);
+        }
+    }
+}
+
+.music_pushable {
+
+cursor: pointer;
+position: absolute;
+z-index: 11;
+
+}
+.music_front {
+    z-index: 11;
+transform: translateY(-6px);
+}
+
+.music_pushable:active .music_front {
+z-index: 11;
+transform: translateY(-2px);
+}
