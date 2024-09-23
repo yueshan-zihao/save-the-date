@@ -12,7 +12,7 @@ const nextConfig = {
     },
     env: {
         wedding_url: "https://www.theknot.com/us/yueshan-zhang-and-zihao-chen-jun-2025/#",
-        prodUrl: ''
+        prodUrl: '/save-the-date'
     },
    
     // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
